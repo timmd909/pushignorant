@@ -35,6 +35,10 @@ The are few goals, but they are extremely important:
 
 * Linux
 * PHP
+  * For constructing the pages and sending data to the user
+* NodeJS
+  * Use PhantomJS for scraping what is necessary from the various servers
+  * Easy to integrate with jQuery    
 * Responsible for crawling the various betting services. 
 * Crawling will be done by the server (and possibly the client)
 * Notifications
@@ -63,6 +67,19 @@ While accepting a bet, make sure this information is recorded:
 * Scraping results for all sources for use in cross-referencing submissions
   * This should be server side to prevent the user from tampering
   
+## Scrape it like a polaroid picture
+
+* Two sites to rule them all
+  * There are basically two sites, but with two divisions each:
+    * Vegas
+      * http://www.vegas.com/gaming/sportsline/college-football/
+      * http://www.vegas.com/gaming/sportsline/football/
+    * http://sports.yahoo.com/ncaa/football/odds
+    * http://sports.yahoo.com/nfl/odds
+  * Two algorithms is all that's needed. 
+  * Make sure to wrap the logic in something nice like `scrapeSite(scraper)`
+    * `scaper` is a function that is given a URL
+    * It returns an object/arrays that relate the information in a normalized manner
   
 # Questions 
 
