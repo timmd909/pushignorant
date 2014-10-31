@@ -11,12 +11,12 @@ figure it best to do things this way.
 
 The are few goals, but they are extremely important: 
 
-# Make administering a fantasy league closer to simple to prevent the commissioner 
-  from premature aging.
-# Allow simple bet submissions that do not require cutting and pasting 
-# Allow realtime validation to disallow users from submitting invalid bets
-# Prevent overuse of memes with kittens in football helmets
-# Have an acceptable mobile and desktop experience
+1. Make administering a fantasy league closer to simple to prevent the commissioner 
+   from premature aging.
+2. Allow simple bet submissions that do not require cutting and pasting 
+3. Allow realtime validation to disallow users from submitting invalid bets
+4. Prevent overuse of memes with kittens in football helmets
+5. Have an acceptable mobile and desktop experience
 
 ## Front end web
 
