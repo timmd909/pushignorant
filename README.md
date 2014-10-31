@@ -5,6 +5,19 @@ knowing what American football is
 
 # Overview
 
+This project was born due to my inability to do a simple fantasy football league. As 
+I refused to learn anything about American football, and how placing picks go, I 
+figure it best to do things this way. 
+
+The are few goals, but they are extremely important: 
+
+# Make administering a fantasy league closer to simple to prevent the commissioner 
+  from premature aging.
+# Allow simple bet submissions that do not require cutting and pasting 
+# Allow realtime validation to disallow users from submitting invalid bets
+# Prevent overuse of memes with kittens in football helmets
+# Have an acceptable mobile and desktop experience
+
 ## Front end web
 
 * Responsive UI
@@ -16,6 +29,7 @@ knowing what American football is
     * Give a choice of the 4 main sites
     * Pick a source (one of those columns in the table)
     * Pick the spread or over/under (determine how the spread works later)
+* Bootstrap 3.x based layout to speed development
 
 ## Backend 
 
