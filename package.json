@@ -1,0 +1,25 @@
+{
+  "name": "pushignorant",
+  "version": "1.0.0",
+  "description": "PushMaster helper for those who lack mastery",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmd909/pushignorant.git"
+  },
+  "keywords": [
+    "PushMaster"
+  ],
+  "author": "Tim Doerzbacher <tim@tim-doerzbacher.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timmd909/pushignorant/issues"
+  },
+  "homepage": "https://github.com/timmd909/pushignorant#readme",
+  "dependencies": {
+    "casperjs": "^1.1.0-beta3",
+    "phantomcss": "^0.11.0"
+  },
+}
