@@ -1,15 +1,16 @@
-#app:
-#  resource: "@AppBundle/Controller/"
-#  type:     annotation
-
 homepage:
     path: /
     defaults: { _controller: AppBundle:Default:index }
 
-page:
-    path: /{slug}
-    defaults: { _controller: AppBundle:Default:page }
-
 json:
     path: /json/{name}
     defaults: { _controller: AppBundle:JSON:show }
+
+contact-us:
+    path: /contact-us/{slug}
+    defaults: { _controller: AppBundle:ContactUs:show, slug: 'index' }
+
+# Everything else
+page:
+    path: /{slug}
+    defaults: { _controller: AppBundle:Default:page }
