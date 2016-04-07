@@ -5,3 +5,7 @@
 homepage:
   path: /
   defaults: { _controller: AppBundle:Default:index }
+
+page:
+  path: /{slug}
+  defaults: { _controller: AppBundle:Default:page }
