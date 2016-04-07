@@ -1,0 +1,648 @@
+{
+	"NFL": [
+    {
+      "region": "Arizona",
+      "name": "Cardinals",
+      "id": 1
+    }, {
+      "region": "Chicago",
+      "name": "Bears",
+      "id": 2
+    }, {
+      "region": "Green Bay",
+      "name": "Packers",
+      "id": 3
+    }, {
+      "region": "New York",
+      "name": "Giants",
+      "id": 4
+    }, {
+      "region": "Detroit",
+      "name": "Lions",
+      "id": 5
+    }, {
+      "region": "Washington",
+      "name": "Redskins",
+      "id": 6
+    }, {
+      "region": "Philadelphia",
+      "name": "Eagles",
+      "id": 7
+    }, {
+      "region": "Pittsburgh",
+      "name": "Steelers",
+      "id": 8
+    }, {
+      "region": "Los Angeles",
+      "name": "Rams",
+      "id": 9
+    }, {
+      "region": "San Francisco",
+      "name": "49ers",
+      "id": 10
+    }, {
+      "region": "Cleveland",
+      "name": "Browns",
+      "id": 11
+    }, {
+      "region": "Indianapolis",
+      "name": "Colts",
+      "id": 12
+    }, {
+      "region": "Dallas",
+      "name": "Cowboys",
+      "id": 13
+    }, {
+      "region": "Kansas City",
+      "name": "Chiefs",
+      "id": 14
+    }, {
+      "region": "San Diego",
+      "name": "Chargers",
+      "id": 15
+    }, {
+      "region": "Denver",
+      "name": "Broncos",
+      "id": 16
+    }, {
+      "region": "New York",
+      "name": "Jets",
+      "id": 17
+    }, {
+      "region": "New England",
+      "name": "Patriots",
+      "id": 18
+    }, {
+      "region": "Oakland",
+      "name": "Raiders",
+      "id": 19
+    }, {
+      "region": "Tennessee",
+      "name": "Titans",
+      "id": 20
+    }, {
+      "region": "Buffalo",
+      "name": "Bills",
+      "id": 21
+    }, {
+      "region": "Minnesota",
+      "name": "Vikings",
+      "id": 22
+    }, {
+      "region": "Atlanta",
+      "name": "Falcons",
+      "id": 23
+    }, {
+      "region": "Miami",
+      "name": "Dolphins",
+      "id": 24
+    }, {
+      "region": "New Orleans",
+      "name": "Saints",
+      "id": 25
+    }, {
+      "region": "Cincinnati",
+      "name": "Bengals",
+      "id": 26
+    }, {
+      "region": "Seattle",
+      "name": "Seahawks",
+      "id": 27
+    }, {
+      "region": "Tampa Bay",
+      "name": "Buccaneers",
+      "id": 28
+    }, {
+      "region": "Carolina",
+      "name": "Panthers",
+      "id": 29
+    }, {
+      "region": "Jacksonville",
+      "name": "Jaguars",
+      "id": 30
+    }, {
+      "region": "Baltimore",
+      "name": "Ravens",
+      "id": 31
+    }, {
+      "region": "Houston",
+      "name": "Texans",
+      "id": 32
+    }
+  ],
+	"NCAA": [
+    {
+      "region": "Air Force",
+      "name": "Falcons",
+      "id": 100
+    }, {
+      "region": "Akron",
+      "name": "Zips",
+      "id": 101
+    }, {
+      "region": "Alabama",
+      "name": "Crimson Tide",
+      "id": 102
+    }, {
+      "region": "Appalachian State",
+      "name": "Mountaineers",
+      "id": 103
+    }, {
+      "region": "Arizona",
+      "name": "Wildcats",
+      "id": 104
+    }, {
+      "region": "Arizona State",
+      "name": "Sun Devils",
+      "id": 105
+    }, {
+      "region": "Arkansas",
+      "name": "Razorbacks",
+      "id": 106
+    }, {
+      "region": "Arkansas State",
+      "name": "Red Wolves",
+      "id": 107
+    }, {
+      "region": "Army West Point",
+      "name": "Black Knights",
+      "id": 108
+    }, {
+      "region": "Auburn",
+      "name": "Tigers",
+      "id": 109
+    }, {
+      "region": "Ball State",
+      "name": "Cardinals",
+      "id": 110
+    }, {
+      "region": "Baylor",
+      "name": "Bears",
+      "id": 111
+    }, {
+      "region": "Boise State",
+      "name": "Broncos",
+      "id": 112
+    }, {
+      "region": "Boston College",
+      "name": "Eagles",
+      "id": 113
+    }, {
+      "region": "Bowling Green",
+      "name": "Falcons",
+      "id": 114
+    }, {
+      "region": "Buffalo",
+      "name": "Bulls",
+      "id": 115
+    }, {
+      "region": "BYU",
+      "name": "Cougars",
+      "id": 116
+    }, {
+      "region": "California",
+      "name": "Golden Bears",
+      "id": 117
+    }, {
+      "region": "Fresno State",
+      "name": "Bulldogs",
+      "id": 118
+    }, {
+      "region": "UCLA",
+      "name": "Bruins",
+      "id": 119
+    }, {
+      "region": "UCF",
+      "name": "Knights",
+      "id": 120
+    }, {
+      "region": "Central Michigan",
+      "name": "Chippewas",
+      "id": 121
+    }, {
+      "region": "Charlotte",
+      "name": "49ers",
+      "id": 122
+    }, {
+      "region": "Cincinnati",
+      "name": "Bearcats",
+      "id": 123
+    }, {
+      "region": "Clemson",
+      "name": "Tigers",
+      "id": 124
+    }, {
+      "region": "Colorado",
+      "name": "Buffaloes",
+      "id": 125
+    }, {
+      "region": "Colorado State",
+      "name": "Rams",
+      "id": 126
+    }, {
+      "region": "Connecticut",
+      "name": "Huskies",
+      "id": 127
+    }, {
+      "region": "Duke",
+      "name": "Blue Devils",
+      "id": 128
+    }, {
+      "region": "Eastern Michigan",
+      "name": "Eagles",
+      "id": 129
+    }, {
+      "region": "East Carolina",
+      "name": "Pirates",
+      "id": 130
+    }, {
+      "region": "Florida",
+      "name": "Gators",
+      "id": 131
+    }, {
+      "region": "Florida Atlantic",
+      "name": "Owls",
+      "id": 132
+    }, {
+      "region": "FIU",
+      "name": "Panthers",
+      "id": 133
+    }, {
+      "region": "Florida State",
+      "name": "Seminoles",
+      "id": 134
+    }, {
+      "region": "Georgia",
+      "name": "Bulldogs",
+      "id": 135
+    }, {
+      "region": "Georgia Southern",
+      "name": "Eagles",
+      "id": 136
+    }, {
+      "region": "Georgia State",
+      "name": "Panthers",
+      "id": 137
+    }, {
+      "region": "Georgia Tech",
+      "name": "Yellow Jackets",
+      "id": 138
+    }, {
+      "region": "Hawai'i",
+      "name": "Rainbow Warriors",
+      "id": 139
+    }, {
+      "region": "Houston",
+      "name": "Cougars",
+      "id": 140
+    }, {
+      "region": "Idaho",
+      "name": "Vandals",
+      "id": 141
+    }, {
+      "region": "Illinois",
+      "name": "Fighting Illini",
+      "id": 142
+    }, {
+      "region": "Indiana",
+      "name": "Hoosiers",
+      "id": 143
+    }, {
+      "region": "Iowa",
+      "name": "Hawkeyes",
+      "id": 144
+    }, {
+      "region": "Iowa State",
+      "name": "Cyclones",
+      "id": 145
+    }, {
+      "region": "Kansas",
+      "name": "Jayhawks",
+      "id": 146
+    }, {
+      "region": "Kansas State",
+      "name": "Wildcats",
+      "id": 147
+    }, {
+      "region": "Kent State",
+      "name": "Golden Flashes",
+      "id": 148
+    }, {
+      "region": "Kentucky",
+      "name": "Wildcats",
+      "id": 149
+    }, {
+      "region": "LSU",
+      "name": "Tigers",
+      "id": 150
+    }, {
+      "region": "Louisiana Tech",
+      "name": "Bulldogs",
+      "id": 151
+    }, {
+      "region": "Louisiana-Lafayette",
+      "name": "Ragin' Cajuns",
+      "id": 152
+    }, {
+      "region": "Louisiana-Monroe",
+      "name": "Warhawks",
+      "id": 153
+    }, {
+      "region": "Louisville",
+      "name": "Cardinals",
+      "id": 154
+    }, {
+      "region": "Marshall",
+      "name": "Thundering Herd",
+      "id": 155
+    }, {
+      "region": "Maryland",
+      "name": "Terrapins",
+      "id": 156
+    }, {
+      "region": "Massachusetts",
+      "name": "Minutemen",
+      "id": 157
+    }, {
+      "region": "Memphis",
+      "name": "Tigers",
+      "id": 158
+    }, {
+      "region": "Miami (FL)",
+      "name": "Hurricanes",
+      "id": 159
+    }, {
+      "region": "Miami (OH)",
+      "name": "RedHawks",
+      "id": 160
+    }, {
+      "region": "Michigan",
+      "name": "Wolverines",
+      "id": 161
+    }, {
+      "region": "Michigan State",
+      "name": "Spartans",
+      "id": 162
+    }, {
+      "region": "Middle Tennessee",
+      "name": "Blue Raiders",
+      "id": 163
+    }, {
+      "region": "Minnesota",
+      "name": "Golden Gophers",
+      "id": 164
+    }, {
+      "region": "Ole Miss",
+      "name": "Rebels",
+      "id": 165
+    }, {
+      "region": "Mississippi State",
+      "name": "Bulldogs",
+      "id": 166
+    }, {
+      "region": "Missouri",
+      "name": "Tigers",
+      "id": 167
+    }, {
+      "region": "Navy",
+      "name": "Midshipmen",
+      "id": 168
+    }, {
+      "region": "Nebraska",
+      "name": "Cornhuskers",
+      "id": 169
+    }, {
+      "region": "Nevada",
+      "name": "Wolf Pack",
+      "id": 170
+    }, {
+      "region": "UNLV",
+      "name": "Rebels",
+      "id": 171
+    }, {
+      "region": "New Mexico",
+      "name": "Lobos",
+      "id": 172
+    }, {
+      "region": "New Mexico State",
+      "name": "Aggies",
+      "id": 173
+    }, {
+      "region": "North Carolina",
+      "name": "Tar Heels",
+      "id": 174
+    }, {
+      "region": "NC State",
+      "name": "Wolfpack",
+      "id": 175
+    }, {
+      "region": "North Texas",
+      "name": "Mean Green",
+      "id": 176
+    }, {
+      "region": "NIU",
+      "name": "Huskies",
+      "id": 177
+    }, {
+      "region": "Northwestern",
+      "name": "Wildcats",
+      "id": 178
+    }, {
+      "region": "Notre Dame",
+      "name": "Fighting Irish",
+      "id": 179
+    }, {
+      "region": "Ohio",
+      "name": "Bobcats",
+      "id": 180
+    }, {
+      "region": "Ohio State",
+      "name": "Buckeyes",
+      "id": 181
+    }, {
+      "region": "Oklahoma",
+      "name": "Sooners",
+      "id": 182
+    }, {
+      "region": "Oklahoma State",
+      "name": "Cowboys",
+      "id": 183
+    }, {
+      "region": "Old Dominion",
+      "name": "Monarchs",
+      "id": 184
+    }, {
+      "region": "Oregon",
+      "name": "Ducks",
+      "id": 185
+    }, {
+      "region": "Oregon State",
+      "name": "Beavers",
+      "id": 186
+    }, {
+      "region": "Penn State",
+      "name": "Nittany Lions",
+      "id": 187
+    }, {
+      "region": "Pittsburgh",
+      "name": "Panthers",
+      "id": 188
+    }, {
+      "region": "Purdue",
+      "name": "Boilermakers",
+      "id": 189
+    }, {
+      "region": "Rice",
+      "name": "Owls",
+      "id": 190
+    }, {
+      "region": "Rutgers",
+      "name": "Scarlet Knights",
+      "id": 191
+    }, {
+      "region": "San Diego State",
+      "name": "Aztecs",
+      "id": 192
+    }, {
+      "region": "San Jose State",
+      "name": "Spartans",
+      "id": 193
+    }, {
+      "region": "South Alabama",
+      "name": "Jaguars",
+      "id": 194
+    }, {
+      "region": "South Carolina",
+      "name": "Gamecocks",
+      "id": 195
+    }, {
+      "region": "South Florida",
+      "name": "Bulls",
+      "id": 196
+    }, {
+      "region": "USC",
+      "name": "Trojans",
+      "id": 197
+    }, {
+      "region": "SMU",
+      "name": "Mustangs",
+      "id": 198
+    }, {
+      "region": "Southern Miss",
+      "name": "Golden Eagles",
+      "id": 199
+    }, {
+      "region": "Stanford",
+      "name": "Cardinal",
+      "id": 200
+    }, {
+      "region": "Syracuse",
+      "name": "Orange",
+      "id": 201
+    }, {
+      "region": "Temple",
+      "name": "Owls",
+      "id": 202
+    }, {
+      "region": "Tennessee",
+      "name": "Volunteers",
+      "id": 203
+    }, {
+      "region": "Texas",
+      "name": "Longhorns",
+      "id": 204
+    }, {
+      "region": "Texas A&M",
+      "name": "Aggies",
+      "id": 205
+    }, {
+      "region": "TCU",
+      "name": "Horned Frogs",
+      "id": 206
+    }, {
+      "region": "Texas State",
+      "name": "Bobcats",
+      "id": 207
+    }, {
+      "region": "Texas Tech",
+      "name": "Red Raiders",
+      "id": 208
+    }, {
+      "region": "UTEP",
+      "name": "Miners",
+      "id": 209
+    }, {
+      "region": "UTSA",
+      "name": "Roadrunners",
+      "id": 210
+    }, {
+      "region": "Toledo",
+      "name": "Rockets",
+      "id": 211
+    }, {
+      "region": "Troy",
+      "name": "Trojans",
+      "id": 212
+    }, {
+      "region": "Tulane",
+      "name": "Green Wave",
+      "id": 213
+    }, {
+      "region": "Tulsa",
+      "name": "Golden Hurricane",
+      "id": 214
+    }, {
+      "region": "Utah",
+      "name": "Utes",
+      "id": 215
+    }, {
+      "region": "Utah State",
+      "name": "Aggies",
+      "id": 216
+    }, {
+      "region": "Vanderbilt",
+      "name": "Commodores",
+      "id": 217
+    }, {
+      "region": "Virginia",
+      "name": "Cavaliers",
+      "id": 218
+    }, {
+      "region": "Virginia Tech",
+      "name": "Hokies",
+      "id": 219
+    }, {
+      "region": "Wake Forest",
+      "name": "Demon Deacons",
+      "id": 220
+    }, {
+      "region": "Washington",
+      "name": "Huskies",
+      "id": 221
+    }, {
+      "region": "Washington State",
+      "name": "Cougars",
+      "id": 222
+    }, {
+      "region": "West Virginia",
+      "name": "Mountaineers",
+      "id": 223
+    }, {
+      "region": "Western Kentucky",
+      "name": "Hilltoppers",
+      "id": 224
+    }, {
+      "region": "Western Michigan",
+      "name": "Broncos",
+      "id": 225
+    }, {
+      "region": "Wisconsin",
+      "name": "Badgers",
+      "id": 226
+    }, {
+      "region": "Wyoming",
+      "name": "Cowboys",
+      "id": 227
+    }
+  ]
+}
