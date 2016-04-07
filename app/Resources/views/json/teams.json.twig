@@ -1,26 +1,33 @@
+{#                                                                   #}
+{# === printTeam ================================================= #}
+{#                                                                   #}
+{% macro printTeam(team) %} {
+            "id": "{{ team.id }}",
+            "name": "{{ team.name }}",
+            "region": "{{ team.region }}" }
+        {% endmacro %}
+{#                                                                   #}
+{# === printLeague ================================================= #}
+{#                                                                   #}
+{% macro printLeague(league) %}
+{% set teams = league.teams %}
+{% set numTeams = teams|length %}{
+        "id": "{{ league.id }}",
+        "name": "{{ league.name }}",
+        "teams": [ {% for teamIndex in 0..(numTeams-1) %}
+{% set team = teams[teamIndex] %}
+{{ _self.printTeam(team) }} {% if teamIndex < numTeams - 1 %},{% endif %}
+{% endfor %} ]
+    } {% endmacro %}
+{#                                                                   #}
+{# === START ======================================================= #}
+{#                                                                   #}
 {% set numLeagues = leagues|length %}
 {
     "Leagues": [
 {% for leagueIndex in 0..(numLeagues-1) %}
-    {% set league = leagues[leagueIndex] %}
-    {% set teams = league.teams %}
-    {% set numTeams = teams|length %}
-        {
-            "id": "{{ league.id }}",
-            "name": "{{ league.name }}",
-            "teams": [
-            {% for teamIndex in 0..(numTeams-1) %}
-            {% set team = teams[teamIndex] %}
-                { "id": "{{ team.id }}", "name": "{{ team.name }}", "region": "{{ team.region }}" }{% spaceless %}
-                    {% if teamIndex < numTeams - 1 %} , {% endif %}
-                {% endspaceless %}
-
-            {% endfor %}
-            ]
-        } {% spaceless %}
-    {% if leagueIndex < numLeagues - 1 %} , {% endif %}
-    {% endspaceless %}
+{% set league = leagues[leagueIndex] %}
+    {{ _self.printLeague(league) }} {% if leagueIndex < numLeagues - 1 %},{% endif %}
 {% endfor %}
-    ] {# end Leagues #}
-
+    ]
 }
