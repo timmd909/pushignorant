@@ -32,6 +32,17 @@ module.exports = {
 		]
 	}, // jquery
 
+	lodash: {
+		files: [
+			{
+				expand: true,
+				flatten: true,
+				src: path.join(VOLO_CACHE_DIR, 'lodash/dist/lodash*.js'),
+				dest: 'web/js/lib'
+			}
+		]
+	}, // lodash
+
 	requirejs: {
 	   files: [
 		   {
