@@ -1,0 +1,26 @@
+{% set numLeagues = leagues|length %}
+{
+    "Leagues": [
+{% for leagueIndex in 0..(numLeagues-1) %}
+    {% set league = leagues[leagueIndex] %}
+    {% set teams = league.teams %}
+    {% set numTeams = teams|length %}
+        {
+            "id": "{{ league.id }}",
+            "name": "{{ league.name }}",
+            "teams": [
+            {% for teamIndex in 0..(numTeams-1) %}
+            {% set team = teams[teamIndex] %}
+                { "id": "{{ team.id }}", "name": "{{ team.name }}", "region": "{{ team.region }}" }{% spaceless %}
+                    {% if teamIndex < numTeams - 1 %} , {% endif %}
+                {% endspaceless %}
+
+            {% endfor %}
+            ]
+        } {% spaceless %}
+    {% if leagueIndex < numLeagues - 1 %} , {% endif %}
+    {% endspaceless %}
+{% endfor %}
+    ] {# end Leagues #}
+
+}
