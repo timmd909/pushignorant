@@ -1,0 +1,481 @@
+Leagues:
+    - NFL:
+       - region: Arizona
+         name: Cardinals
+
+       - region: Chicago
+         name: Bears
+
+       - region: Green Bay
+         name: Packers
+
+       - region: New York
+         name: Giants
+
+       - region: Detroit
+         name: Lions
+
+       - region: Washington
+         name: Redskins
+
+       - region: Philadelphia
+         name: Eagles
+
+       - region: Pittsburgh
+         name: Steelers
+
+       - region: Los Angeles
+         name: Rams
+
+       - region: San Francisco
+         name: 49ers
+
+       - region: Cleveland
+         name: Browns
+
+       - region: Indianapolis
+         name: Colts
+
+       - region: Dallas
+         name: Cowboys
+
+       - region: Kansas City
+         name: Chiefs
+
+       - region: San Diego
+         name: Chargers
+
+       - region: Denver
+         name: Broncos
+
+       - region: New York
+         name: Jets
+
+       - region: New England
+         name: Patriots
+
+       - region: Oakland
+         name: Raiders
+
+       - region: Tennessee
+         name: Titans
+
+       - region: Buffalo
+         name: Bills
+
+       - region: Minnesota
+         name: Vikings
+
+       - region: Atlanta
+         name: Falcons
+
+       - region: Miami
+         name: Dolphins
+
+       - region: New Orleans
+         name: Saints
+
+       - region: Cincinnati
+         name: Bengals
+
+       - region: Seattle
+         name: Seahawks
+
+       - region: Tampa Bay
+         name: Buccaneers
+
+       - region: Carolina
+         name: Panthers
+
+       - region: Jacksonville
+         name: Jaguars
+
+       - region: Baltimore
+         name: Ravens
+
+       - region: Houston
+         name: Texans
+    - NCAA:
+       - region: Air Force
+         name: Falcons
+
+       - region: Akron
+         name: Zips
+
+       - region: Alabama
+         name: Crimson Tide
+
+       - region: Appalachian State
+         name: Mountaineers
+
+       - region: Arizona
+         name: Wildcats
+
+       - region: Arizona State
+         name: Sun Devils
+
+       - region: Arkansas
+         name: Razorbacks
+
+       - region: Arkansas State
+         name: Red Wolves
+
+       - region: Army West Point
+         name: Black Knights
+
+       - region: Auburn
+         name: Tigers
+
+       - region: Ball State
+         name: Cardinals
+
+       - region: Baylor
+         name: Bears
+
+       - region: Boise State
+         name: Broncos
+
+       - region: Boston College
+         name: Eagles
+
+       - region: Bowling Green
+         name: Falcons
+
+       - region: Buffalo
+         name: Bulls
+
+       - region: BYU
+         name: Cougars
+
+       - region: California
+         name: Golden Bears
+
+       - region: Fresno State
+         name: Bulldogs
+
+       - region: UCLA
+         name: Bruins
+
+       - region: UCF
+         name: Knights
+
+       - region: Central Michigan
+         name: Chippewas
+
+       - region: Charlotte
+         name: 49ers
+
+       - region: Cincinnati
+         name: Bearcats
+
+       - region: Clemson
+         name: Tigers
+
+       - region: Colorado
+         name: Buffaloes
+
+       - region: Colorado State
+         name: Rams
+
+       - region: Connecticut
+         name: Huskies
+
+       - region: Duke
+         name: Blue Devils
+
+       - region: Eastern Michigan
+         name: Eagles
+
+       - region: East Carolina
+         name: Pirates
+
+       - region: Florida
+         name: Gators
+
+       - region: Florida Atlantic
+         name: Owls
+
+       - region: FIU
+         name: Panthers
+
+       - region: Florida State
+         name: Seminoles
+
+       - region: Georgia
+         name: Bulldogs
+
+       - region: Georgia Southern
+         name: Eagles
+
+       - region: Georgia State
+         name: Panthers
+
+       - region: Georgia Tech
+         name: Yellow Jackets
+
+       - region: Hawai'i
+         name: Rainbow Warriors
+
+       - region: Houston
+         name: Cougars
+
+       - region: Idaho
+         name: Vandals
+
+       - region: Illinois
+         name: Fighting Illini
+
+       - region: Indiana
+         name: Hoosiers
+
+       - region: Iowa
+         name: Hawkeyes
+
+       - region: Iowa State
+         name: Cyclones
+
+       - region: Kansas
+         name: Jayhawks
+
+       - region: Kansas State
+         name: Wildcats
+
+       - region: Kent State
+         name: Golden Flashes
+
+       - region: Kentucky
+         name: Wildcats
+
+       - region: LSU
+         name: Tigers
+
+       - region: Louisiana Tech
+         name: Bulldogs
+
+       - region: Louisiana-Lafayette
+         name: Ragin' Cajuns
+
+       - region: Louisiana-Monroe
+         name: Warhawks
+
+       - region: Louisville
+         name: Cardinals
+
+       - region: Marshall
+         name: Thundering Herd
+
+       - region: Maryland
+         name: Terrapins
+
+       - region: Massachusetts
+         name: Minutemen
+
+       - region: Memphis
+         name: Tigers
+
+       - region: Miami (FL)
+         name: Hurricanes
+
+       - region: Miami (OH)
+         name: RedHawks
+
+       - region: Michigan
+         name: Wolverines
+
+       - region: Michigan State
+         name: Spartans
+
+       - region: Middle Tennessee
+         name: Blue Raiders
+
+       - region: Minnesota
+         name: Golden Gophers
+
+       - region: Ole Miss
+         name: Rebels
+
+       - region: Mississippi State
+         name: Bulldogs
+
+       - region: Missouri
+         name: Tigers
+
+       - region: Navy
+         name: Midshipmen
+
+       - region: Nebraska
+         name: Cornhuskers
+
+       - region: Nevada
+         name: Wolf Pack
+
+       - region: UNLV
+         name: Rebels
+
+       - region: New Mexico
+         name: Lobos
+
+       - region: New Mexico State
+         name: Aggies
+
+       - region: North Carolina
+         name: Tar Heels
+
+       - region: NC State
+         name: Wolfpack
+
+       - region: North Texas
+         name: Mean Green
+
+       - region: NIU
+         name: Huskies
+
+       - region: Northwestern
+         name: Wildcats
+
+       - region: Notre Dame
+         name: Fighting Irish
+
+       - region: Ohio
+         name: Bobcats
+
+       - region: Ohio State
+         name: Buckeyes
+
+       - region: Oklahoma
+         name: Sooners
+
+       - region: Oklahoma State
+         name: Cowboys
+
+       - region: Old Dominion
+         name: Monarchs
+
+       - region: Oregon
+         name: Ducks
+
+       - region: Oregon State
+         name: Beavers
+
+       - region: Penn State
+         name: Nittany Lions
+
+       - region: Pittsburgh
+         name: Panthers
+
+       - region: Purdue
+         name: Boilermakers
+
+       - region: Rice
+         name: Owls
+
+       - region: Rutgers
+         name: Scarlet Knights
+
+       - region: San Diego State
+         name: Aztecs
+
+       - region: San Jose State
+         name: Spartans
+
+       - region: South Alabama
+         name: Jaguars
+
+       - region: South Carolina
+         name: Gamecocks
+
+       - region: South Florida
+         name: Bulls
+
+       - region: USC
+         name: Trojans
+
+       - region: SMU
+         name: Mustangs
+
+       - region: Southern Miss
+         name: Golden Eagles
+
+       - region: Stanford
+         name: Cardinal
+
+       - region: Syracuse
+         name: Orange
+
+       - region: Temple
+         name: Owls
+
+       - region: Tennessee
+         name: Volunteers
+
+       - region: Texas
+         name: Longhorns
+
+       - region: Texas A&M
+         name: Aggies
+
+       - region: TCU
+         name: Horned Frogs
+
+       - region: Texas State
+         name: Bobcats
+
+       - region: Texas Tech
+         name: Red Raiders
+
+       - region: UTEP
+         name: Miners
+
+       - region: UTSA
+         name: Roadrunners
+
+       - region: Toledo
+         name: Rockets
+
+       - region: Troy
+         name: Trojans
+
+       - region: Tulane
+         name: Green Wave
+
+       - region: Tulsa
+         name: Golden Hurricane
+
+       - region: Utah
+         name: Utes
+
+       - region: Utah State
+         name: Aggies
+
+       - region: Vanderbilt
+         name: Commodores
+
+       - region: Virginia
+         name: Cavaliers
+
+       - region: Virginia Tech
+         name: Hokies
+
+       - region: Wake Forest
+         name: Demon Deacons
+
+       - region: Washington
+         name: Huskies
+
+       - region: Washington State
+         name: Cougars
+
+       - region: West Virginia
+         name: Mountaineers
+
+       - region: Western Kentucky
+         name: Hilltoppers
+
+       - region: Western Michigan
+         name: Broncos
+
+       - region: Wisconsin
+         name: Badgers
+
+       - region: Wyoming
+         name: Cowboys

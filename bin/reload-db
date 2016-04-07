@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Completely wipe out the database and recreate
+#
+
+SAY_PLEASE="please"
+
+pushd `dirname $0` > /dev/null
+
+if [[ ! "$1" -eq "$SAY_PLEASE" ]]; then
+    echo "This is a potentially dangerous task"
+    echo "If you really wanna do this, read the source and say the magic words."
+    exit 99
+fi
+
+./console doctrine:schema:drop --force
+./console doctrine:schema:create
+./console doctrine:fixtures:load -n
+
+popd > /dev/null
