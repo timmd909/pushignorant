@@ -1,5 +1,6 @@
 Leagues:
-    - NFL:
+    - name: NFL
+      teams:
        - region: Arizona
          name: Cardinals
 
@@ -95,7 +96,8 @@ Leagues:
 
        - region: Houston
          name: Texans
-    - NCAA:
+    - name: NCAA
+      teams:
        - region: Air Force
          name: Falcons
 

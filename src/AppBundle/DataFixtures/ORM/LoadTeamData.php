@@ -40,18 +40,33 @@ class LoadTeamData implements FixtureInterface, ContainerAwareInterface
         }
 
         $yamlContent = file_get_contents($filename);
+        $parsed = yaml_parse($yamlContent);
 
-        return yaml_parse($yamlContent);
+        return $parsed['Leagues'];
     }
 
     public function load(ObjectManager $manager)
     {
-        $teamData = $this->loadTeamYaml();
-        var_dump($teamData);
+        $leagueData = $this->loadTeamYaml();
 
-//        $leagueRepo = $manager->getRepository('League');
-//        $leagues = $leagueRepo->findAll();
+        foreach ($leagueData as $currLeague) {
+            $leagueName = $currLeague['name'];
+            $numTeams = count($currLeague['teams']);
+            print("Found league: $leagueName ($numTeams total teams)\n");
+
+            $league = new League();
+            $league->setName($leagueName);
+            $manager->persist($league);
+
+            foreach($currLeague['teams'] as $currTeam) {
+                $team = new Team();
+                $team->setName($currTeam['name']);
+                $team->setRegion($currTeam['region']);
+                $team->setLeague($league);
+                $manager->persist($team);
+            } // foreach teams
+        } // foreach leagues
 
         $manager->flush();
-    }
+    } // public function load(...)
 }
