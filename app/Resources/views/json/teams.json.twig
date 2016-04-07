@@ -1,22 +1,22 @@
 {#                                                                   #}
 {# === printTeam ================================================= #}
 {#                                                                   #}
-{% macro printTeam(team) %} {
-            "id": "{{ team.id }}",
-            "name": "{{ team.name }}",
-            "region": "{{ team.region }}" }
-        {% endmacro %}
+{% macro printTeam(team) %}
+            { "id": "{{ team.id }}",
+              "name": "{{ team.name }}",
+              "region": "{{ team.region }}" }{% endmacro %}
 {#                                                                   #}
 {# === printLeague ================================================= #}
 {#                                                                   #}
 {% macro printLeague(league) %}
 {% set teams = league.teams %}
-{% set numTeams = teams|length %}{
-        "id": "{{ league.id }}",
-        "name": "{{ league.name }}",
-        "teams": [ {% for teamIndex in 0..(numTeams-1) %}
+{% set numTeams = teams|length %}    { "id": "{{ league.id }}",
+          "name": "{{ league.name }}",
+          "teams": [
+{% for teamIndex in 0..(numTeams-1) %}
 {% set team = teams[teamIndex] %}
-{{ _self.printTeam(team) }} {% if teamIndex < numTeams - 1 %},{% endif %}
+{{ _self.printTeam(team) }}{% if teamIndex < numTeams - 1 %},{% endif %}
+
 {% endfor %} ]
     } {% endmacro %}
 {#                                                                   #}
