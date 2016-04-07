@@ -18,20 +18,40 @@ require({
     'bootstrap'
 ],
 function (ko, $, _) {
-    var viewModel = {};
+    var viewModel = {
+        leagues: ko.observableArray([]),
+        lineSources: ko.observableArray([]),
+    };
 
-    viewModel.loading = ko.observable(true);
+    viewModel.loading = ko.pureComputed({
+        read: function () {
+            return viewModel.leagues().length == 0 ||
+                viewModel.lineSources().length == 0;
+        }
+    });
     viewModel.loadingFailed = ko.observable(false);
-    viewModel.leagues = ko.observableArray([]);
 
     $.ajax({
         url: 'json/teams',
         success: function (data) {
-            viewModel.loading(false);
             viewModel.leagues(data.Leagues);
         },
         error: function () {
-            viewModel.loading(false);
+            viewModel.loadingFailed(true);
+        },
+    })
+
+    $.ajax({
+        url: 'json/lineSources',
+        success: function (data) {
+            var emptyItem = {
+                id: -1,
+                name: 'Select line source',
+                url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            };
+            viewModel.lineSources([emptyItem].concat(data.sources));
+        },
+        error: function () {
             viewModel.loadingFailed(true);
         },
     })
