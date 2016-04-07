@@ -2,13 +2,20 @@ require({
     baseUrl: 'js/',
     paths: {
         'jquery': 'lib/jquery',
+        'bootstrap': 'lib/bootstrap',
         'knockout': 'lib/knockout',
         'lodash': 'lib/lodash'
+    },
+    shim: {
+        'bootstrap': {
+            deps: ['jquery']
+        }
     }
 }, [
     'knockout',
     'jquery',
-    'lodash'
+    'lodash',
+    'bootstrap'
 ],
 function (ko, $, _) {
     var viewModel = {};
