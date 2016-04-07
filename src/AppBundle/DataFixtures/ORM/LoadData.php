@@ -3,13 +3,14 @@
 namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\League;
+use AppBundle\Entity\LineSource;
 use AppBundle\Entity\Team;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class LoadTeamData implements FixtureInterface, ContainerAwareInterface
+class LoadData implements FixtureInterface, ContainerAwareInterface
 {
     /**
      * The dependency injection container.
@@ -57,6 +58,14 @@ class LoadTeamData implements FixtureInterface, ContainerAwareInterface
             $league = new League();
             $league->setName($leagueName);
             $manager->persist($league);
+
+            foreach($currLeague['sources'] as $currLineSource) {
+                $source = new LineSource();
+                $source->setName($currLineSource['name'] . " ($leagueName)");
+                $source->setUrl($currLineSource['url']);
+                $source->setLeague($league);
+                $manager->persist($source);
+            }
 
             foreach($currLeague['teams'] as $currTeam) {
                 $team = new Team();

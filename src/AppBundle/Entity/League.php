@@ -20,17 +20,17 @@ class League
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;
+    private $id;
 
     /**
      * @ORM\Column(type="text",length=100)
      */
-    protected $name;
+    private $name;
 
     /**
      * @ORM\OneToMany(targetEntity="Team", mappedBy="league")
      */
-    protected $teams;
+    private $teams;
 
     /**
      * Get id

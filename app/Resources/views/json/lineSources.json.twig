@@ -1,0 +1,13 @@
+{
+    "sources": [
+{% set numSources = sources|length %}
+{% for sourceIndex in 0..(numSources-1) %}{% set currSource = sources[sourceIndex] %}
+        {
+            "id": "{{ currSource.id }}",
+            "name": "{{ currSource.name }}",
+            "url": "{{ currSource.url }}"
+        } {% if sourceIndex < (numSources-1) %},{% endif %}
+{% endfor %}
+
+    ]
+}

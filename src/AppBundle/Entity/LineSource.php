@@ -3,33 +3,36 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-//use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * @ORM\Entity
+ * LineSource
+ *
+ * @ORM\Table(name="line_source")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\LineSourceRepository")
  */
-class Team
+class LineSource
 {
-    public function __construct()
-    {
-    }
-
     /**
+     * @var int
+     *
      * @ORM\Id
-     * @ORM\Column(type="integer")
+     * @ORM\Column(name="id", type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="text",length=100)
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=100)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="text",length=200)
+     * @var string
+     * @ORM\Column(type="string", length=255)
      */
-    private $region;
+    private $url;
 
     /**
      * @ORM\ManyToOne(targetEntity="League", inversedBy="teams")
@@ -39,7 +42,7 @@ class Team
     /**
      * Get id
      *
-     * @return integer
+     * @return int
      */
     public function getId()
     {
@@ -51,7 +54,7 @@ class Team
      *
      * @param string $name
      *
-     * @return Team
+     * @return LineSource
      */
     public function setName($name)
     {
@@ -68,30 +71,6 @@ class Team
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * Set region
-     *
-     * @param string $region
-     *
-     * @return Team
-     */
-    public function setRegion($region)
-    {
-        $this->region = $region;
-
-        return $this;
-    }
-
-    /**
-     * Get region
-     *
-     * @return string
-     */
-    public function getRegion()
-    {
-        return $this->region;
     }
 
     /**
@@ -116,5 +95,29 @@ class Team
     public function getLeague()
     {
         return $this->league;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     *
+     * @return LineSource
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

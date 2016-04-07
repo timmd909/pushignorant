@@ -30,12 +30,27 @@ class JSONController extends Controller
         );
 
         switch ($name) {
+            case 'lineSources':
+                $template = 'json/lineSources.json.twig';
+                $data['sources'] = [];
+
+                $lineSourceRepo = $em->getRepository('AppBundle\Entity\LineSource');
+                foreach ($lineSourceRepo->findAll() as $currLineSource) {
+                    $source = [
+                        'id' => $currLineSource->getId(),
+                        'name' => $currLineSource->getName(),
+                        'url' => $currLineSource->getUrl()
+                    ];
+                    $data['sources'][] = $source;
+                }
+
+                break;
             case 'teams':
                 $template = "json/teams.json.twig";
                 $leagueRepo = $em->getRepository('AppBundle\Entity\League');
                 $teamRepo = $em->getRepository('AppBundle\Entity\Team');
 
-                $data = [ 'leagues' => []];
+                $data['leagues'] = [];
 
                 foreach ($leagueRepo->findAll() as $currLeague) {
                     $league = [
