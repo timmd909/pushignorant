@@ -18,8 +18,10 @@
   {% block body %}{% endblock %}
 
   {% block javascripts %}
-    <script src="{{ asset('js/jquery.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/lib/require.js') }}"></script>
+    {% block javascripts_main %}
+        <script src="{{ asset('js/main.js') }}"></script>
+    {% endblock %}
   {% endblock %}
 </body>
 </html>
