@@ -1,13 +1,22 @@
 'use strict';
 
+var VOLO_CACHE_DIR = 'var/cache/volo';
+var path = require('path');
+
 module.exports = {
 	bootstrap: {
 		files: [
 			{
 				expand: true,
 				flatten: true,
-				src: 'vendor/components/bootstrap/js/bootstrap**.js',
-				dest: 'web/js'
+				src: path.join(VOLO_CACHE_DIR, '/bootstrap/dist/js/bootstrap**.js'),
+				dest: 'web/js/lib'
+			},
+			{
+				expand: true,
+				flatten: true,
+				src: path.join(VOLO_CACHE_DIR, '/bootstrap/dist/fonts/**'),
+				dest: 'web/fonts/'
 			}
 		]
 	}, // bootstrap
@@ -17,24 +26,51 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: 'vendor/components/jquery/jquery.**',
-				dest: 'web/js/'
+				src: path.join(VOLO_CACHE_DIR, 'jquery.**'),
+				dest: 'web/js/lib'
 			}
 		]
 	}, // jquery
+
+	requirejs: {
+	   files: [
+		   {
+			   expand: true,
+			   flatten: true,
+			   src: path.join(VOLO_CACHE_DIR, 'require.js'),
+			   dest: 'web/js/lib'
+		   }
+	   ]
+   }, // requirejs
+
+	knockout: {
+		files: [
+			{
+				expand: true,
+				flatten: true,
+				src: path.join(VOLO_CACHE_DIR, 'knockout/dist/*.js'),
+				dest: 'web/js/lib/',
+				rename: function (dest, src) {
+					src = src.replace(/\.js$/, '.min.js').replace('debug.min.', '');
+
+					return dest + src;
+				}
+			}
+		]
+	}, // knockout
 
 	'font-awesome': {
 		files: [
 			{
 				expand: true,
 				flatten: true,
-				src: 'vendor/components/font-awesome/css/**.css',
+				src: path.join(VOLO_CACHE_DIR, 'font-awesome/css/*.css'),
 				dest: 'web/css'
 			},
 			{
 				expand: true,
 				flatten: true,
-				src: 'vendor/components/font-awesome/fonts/**',
+				src: path.join(VOLO_CACHE_DIR, 'Font-Awesome/fonts/*)'),
 				dest: 'web/fonts'
 			}
 		]
