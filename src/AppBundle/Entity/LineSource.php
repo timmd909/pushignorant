@@ -146,4 +146,8 @@ class LineSource
     {
         return $this->url;
     }
+
+    public function __toString() {
+        return  'Line Source: ' . $this->name . ' (' . $this->url . ')';
+    }
 }

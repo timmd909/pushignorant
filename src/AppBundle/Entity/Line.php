@@ -77,4 +77,8 @@ class Line
         $this->lineSource = $lineSource;
         return $this;
     }
+
+    public function __toString() {
+        return 'Line: ' . $this->name;
+    }
 }

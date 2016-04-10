@@ -117,4 +117,9 @@ class Team
     {
         return $this->league;
     }
+
+    public function __toString() {
+        return  'Team: ' . $this->name . ' (' . $this->getLeague()->getName() . ')';
+    }
+
 }
