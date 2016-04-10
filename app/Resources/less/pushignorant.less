@@ -44,3 +44,35 @@ body {
         min-height: (@font-size-base * 6);
     }
 }
+
+
+.loading-message {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    font-size: @font-size-base * 2;
+
+    div {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        margin-top: -(@font-size-base*4);
+
+        p {
+            color: @gray-light;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            display: block;
+            line-height: @font-size-base * 15;
+        }
+
+        i {
+            color: @gray-dark;
+            font-size: @font-size-base * 15;
+        }
+    }
+}
