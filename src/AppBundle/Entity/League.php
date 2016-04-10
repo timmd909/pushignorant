@@ -10,11 +10,6 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class League
 {
-    public function __construct()
-    {
-        $this->teams = new ArrayCollection();
-    }
-
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -31,6 +26,17 @@ class League
      * @ORM\OneToMany(targetEntity="Team", mappedBy="league")
      */
     private $teams;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="LineSource", mappedBy="leagues")
+     */
+    private $lineSources;
+
+    public function __construct()
+    {
+        $this->teams = new ArrayCollection();
+        $this->lineSources = new ArrayCollection();
+    }
 
     /**
      * Get id

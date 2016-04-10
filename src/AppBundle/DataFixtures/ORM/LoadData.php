@@ -63,19 +63,29 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
             $lineSourceName = $currLineSource['name'];
             $lineSourceUrl = $currLineSource['url'];
             $lineSourceLines = $currLineSource['lines'];
-
-            print("Processing «${lineSourceName}» - ${lineSourceUrl}\n");
+            $lineSourceLeagues = $currLineSource['leagues'];
 
             $lineSource = new LineSource();
             $lineSource->setName($lineSourceName);
             $lineSource->setUrl($lineSourceUrl);
 
+            print("Processing $lineSource\n");
+
+            $lines = [];
             foreach ($lineSourceLines as $currLine) {
                 print("\t- ${currLine}\n");
                 $line = new Line();
                 $line->setName($currLine);
                 $line->setLineSource($lineSource);
                 $manager->persist($line);
+                $lines[] = $line;
+            }
+
+            $leagueRepo = $manager->getRepository('AppBundle\Entity\League');
+            foreach ($lineSourceLeagues as $currLeagueName) {
+                $leagueEntity = $leagueRepo->findByName($currLeagueName);
+                $leagueEntity = $leagueEntity[0];
+                $lineSource->getLeagues()->add($leagueEntity);
             }
 
             $manager->persist($lineSource);
@@ -89,11 +99,13 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
         foreach ($leagueData as $currLeague) {
             $leagueName = $currLeague['name'];
             $numTeams = count($currLeague['teams']);
-            print("Found league: $leagueName ($numTeams total teams)\n");
+            // print("Found league: $leagueName ($numTeams total teams)\n");
 
             $league = new League();
             $league->setName($leagueName);
             $manager->persist($league);
+
+            print("Processing $league\n");
 
             foreach($currLeague['teams'] as $currTeam) {
                 $team = new Team();
@@ -101,6 +113,7 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
                 $team->setRegion($currTeam['region']);
                 $team->setLeague($league);
                 $manager->persist($team);
+                print ("\tProcessing $team\n");
             } // foreach teams
         } // foreach leagues
     }
@@ -112,8 +125,9 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
     public function load(ObjectManager $manager)
     {
         $this->loadTeams($manager);
-        $this->loadLineSources($manager);
+        $manager->flush();
 
+        $this->loadLineSources($manager);
         $manager->flush();
     } // public function load(...)
 }

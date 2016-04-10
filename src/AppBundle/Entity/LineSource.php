@@ -42,7 +42,8 @@ class LineSource
     private $lines;
 
     /**
-     * @ORM\OneToMany(targetEntity="Line", mappedBy="lineSource")
+     * @ORM\ManyToMany(targetEntity="League", inversedBy="lineSources")
+     * @ORM\JoinTable(name="line_sources_leagues")
      */
     private $leagues;
 
@@ -101,7 +102,25 @@ class LineSource
      */
     public function getLeagues()
     {
-        return $this->league;
+        return $this->leagues;
+    }
+
+    /**
+     * Set league
+     */
+    public function setLines(ArrayCollection $lines)
+    {
+        $this->lines = $lines;
+
+        return $this;
+    }
+
+    /**
+     * Get league
+     */
+    public function getLines()
+    {
+        return $this->lines;
     }
 
     /**
