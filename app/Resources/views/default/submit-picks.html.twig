@@ -14,6 +14,29 @@
 	<form class="form-horizontal pick-form" style="display: none" data-bind="visible: !loading() && !loadingFailed()">
 
 		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2 class="panel-title">Reminders</h2>
+			</div>
+			<div class="panel-body clearfix">
+				<ul>
+					<li>All picks must be submitted at the same time</li>
+					<li>Picks must be made before the games start</li>
+				</ul>
+				<div>
+					<button class="btn btn-default" type="button"
+						data-toggle="collapse" data-target="#the-rules"
+						aria-expanded="false" aria-controls="the-rules">
+						Show All Rules</button>
+					<div class="collapse" id="the-rules">
+						<div class="well">
+							The rules would go here
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
 			<div class="panel-heading"><h2 class="panel-title">Your information</h2></div>
 			<div class="panel-body">
 
@@ -61,6 +84,38 @@
 					</label>
 					<div class="col-sm-10">
 						<textarea class="form-control comments"></textarea>
+					</div>
+				</fieldset>
+				<fieldset>
+					<label class="col-sm-2 control-label">
+						Confidence Level
+					</label>
+					<div class="col-sm-10">
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="confidence-level" value="0"> None
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="confidence-level" value="0"> Low
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="confidence-level" value="0"> Medium
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="confidence-level" value="0"> High
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="confidence-level" value="0"> Supreme
+							</label>
+						</div>
 					</div>
 				</fieldset>
 
