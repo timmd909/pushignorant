@@ -1,0 +1,382 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 19:41:55 Dec 31, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:15:03 Apr 10, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.ysp-wide #doc {
+  background-image: url(/web/20151231194155/https://s.yimg.com/lq/i/us/sp/ed/tp-sky-bg.png);
+  _background-image: url(/web/20151231194155/https://s.yimg.com/lq/i/us/sp/ed/tp-sky-bg_8bit.png);
+}
+
+.ysp-wide #yui-main,
+.ysp-wide #doc #yui-main .yui-b {
+  margin-left: 10px;
+  *margin-left: 5px;
+  width: 750px;
+}
+
+.ysp-wide #yui-sub .yui-b {
+  min-width: 185px;
+  width: 185px;
+}
+
+#ysports #bd {
+    padding:10px 0 10px 10px;
+}
+
+#ysports .odds #yui-main,
+#ysports .odds #yui-main .yui-b {
+    margin: 0;
+}
+
+#ysports .odds #yui-main.yog-col {
+    margin-left: 190px;
+}
+
+#ysports .odds #yui-main.yog-cp {
+    width: 64%;
+}
+
+.odds #yui-sub .mod table {
+    margin: 0 auto;
+}
+
+.odds #yui-sub .mod {
+    min-width: 185px;
+    width: 185px;
+}
+
+.odds #yui-sub .yui-b {
+  zoom: 1;
+}
+
+#ysports .odds #yui-main .mod div.bd {
+    background: none;
+    padding: 0;
+}
+
+#yui-main .yui-b #odds .hd {
+    background: none;
+    padding: 0;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+
+#odds h2 {
+	font-weight: bold;
+}
+
+#odds .bd p {
+	font-size: 93%;
+	margin: 5px 0;
+}
+
+#odds .hd ul {
+	_clear: left;
+	_float: left;
+	margin: 5px 0;
+    overflow: hidden;
+	zoom: 1;
+}
+
+#odds .hd {
+	position: relative;
+}
+
+#odds .hd li,
+#odds .hd span,
+#odds .hd a {
+    line-height: 1em;
+}
+
+#odds .hd li {
+    border-left: 1px solid #030303;
+    float: left;
+    margin-left: -1px;
+    padding: 0 10px;
+}
+
+#odds .hd li:first-child {
+    padding-left: 0;
+}
+
+#odds .hd .types {
+	border-bottom: 1px solid #DDD;
+	margin: 10px 0;
+	overflow: visible;
+	padding: 0;
+	width: 100%;
+	zoom: 1;
+}
+
+#odds .hd .types li {
+	border: none;
+	margin: 0 1px 0 0;
+	padding: 0;
+}
+
+#odds .hd .types li .no-data {
+	background-color: #DDD;
+	color: #8F8F8F;
+}
+
+#bd #odds .hd .types li a:visited {
+	color: #0069AA;
+}
+
+#odds .hd .types li a,
+#odds .hd .types li span {
+	border: 1px solid #DDD;
+	border-width: 1px 1px 0 1px;
+	bottom: -1px;
+	display: block;
+	line-height: 1.5em;
+	padding: 0 15px;
+	position: relative;
+	vertical-align: center;
+}
+
+#odds .hd .types li a {
+	background-color: #DDD;
+	bottom: 1px;
+}
+
+#odds .hd .types li span {
+	background-color: #FFF;
+	margin-top: -2px;
+	padding-bottom: 2px;
+}
+
+#odds .hd .form {
+	right: 0;
+	position: absolute;
+	width: 50%;
+    text-align: right;
+	top: 0px;
+}
+
+#odds em {
+    font-weight: bold;
+}
+
+#odds h4 {
+    background-color: #676767;
+    color: #FFF;
+	font-weight: bold;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+#odds table {
+    width: 100%;
+}
+
+#odds thead {
+    background-color: #CCC;
+}
+
+#odds td.teams {
+  font-size: 110%;
+  font-weight: bold;
+  width: 15%;
+}
+
+#odds td.ncaaf {
+  width: 30%;
+  _width: 24%;
+}
+
+#odds td {
+	vertical-align: top;
+    width: 14%;
+}
+
+#odds tbody td div {
+    height: 23px;
+    margin: 4px 0;
+    padding: 3px;
+    zoom: 1;
+}
+
+#sky table {
+  margin: 0 50%;
+}
+
+#odds tbody td .over-under {
+    background-color: #FFFFE5;
+    border: 1px solid #CED0C5;
+}
+
+#odds tbody td div span {
+    float: left;
+    font-size: 85%;
+    padding: .7em 3px 0 5px;
+    width: auto;
+}
+
+#odds .pointspread tbody td .blank {
+	padding-bottom: 6px;
+}
+
+#odds .moneyline tbody td .blank {
+	float: right;
+	padding: 8px;
+	width: 40%;
+}
+
+#odds tbody td div span.top-line {
+	padding-top: 0;
+}
+
+#odds tbody td div span.bottom-line {
+	padding-top: 1.2em;
+}
+
+#odds tbody td div div {
+    background-color: transparent;
+    border: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+#odds tbody td div div span {
+    float: none;
+    padding: 0;
+    width: 100%;
+}
+
+
+#odds-league p {
+  display: inline;
+}
+
+#odds-league_select {
+  margin-left: 10px;
+}
+
+#odds .teams div {
+    background-color: transparent;
+    border: none;
+    font-size: 93%;
+    font-weight: normal;
+    height: auto;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+#odds .teams div span {
+    float: none;
+    line-height: 1.22em;
+    padding: 0;
+    width: auto;
+}
+
+#odds tbody tr {
+    background-color: #F6F7F2;
+    font-size: 93%;
+}
+
+#odds tbody tr.odd {
+    background-color: #FFF;
+}
+
+#odds .bd p.top-odds {
+  border: 1px solid #ced0c5;
+  font-size: 100%;
+  background: #ffffe5;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+#odds th {
+    padding: 3px;
+}
+
+#odds td {
+    padding: 5px 1px;
+}
+
+#odds table span {
+    display: block;
+}
+
+#odds table td.teams .team span {
+	display: inline;
+	font-weight: normal;
+}
+
+#odds .hd:after,
+#odds .hd .types:after,
+#odds tbody td div:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+#odds .bd table.moneyline th,
+#odds .bd table.moneyline td {
+    text-align: right;
+    padding: 3px 10px 3px 0;
+}
+
+#odds .bd table.moneyline th.teams,
+#odds .bd table.moneyline td.teams {
+    text-align: left;
+    padding-right: 3px 0 3px 10px;
+}
+
+
+
+#odds-legend {
+    background: #F9F9F9;
+    border: 1px solid #F3F3F3;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#ysports #yui-main .yui-b #odds-legend .hd,
+#ysports #yui-main .yui-b #odds-legend .bd,
+#ysports #yui-main .yui-b #odds-legend .ft {
+    background: none;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    *zoom: 1;
+}
+
+#odds-legend h3,
+#odds-legend strong {
+    font-weight: bold;
+}
+
+#odds-legend ul.terms li {
+    padding: 0 0 15px 0;
+}
+
+#odds-legend ul.terms li p {
+    padding: 5px 0 0 0;
+}
+
+#odds-legend ul.terms li em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#ysports #yui-main .yui-b #odds-legend .ft {
+    padding: 0 10px 10px 0;
+    text-align: right;
+}
