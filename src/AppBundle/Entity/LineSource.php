@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+use AppBundle\Entity\Line as Line;
 
 /**
  * LineSource
@@ -35,9 +37,20 @@ class LineSource
     private $url;
 
     /**
-     * @ORM\ManyToOne(targetEntity="League", inversedBy="teams")
+     * @ORM\OneToMany(targetEntity="Line", mappedBy="lineSource")
      */
-    private $league;
+    private $lines;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Line", mappedBy="lineSource")
+     */
+    private $leagues;
+
+    public function __construct()
+    {
+        $this->lines = new ArrayCollection();
+        $this->leagues = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -75,24 +88,18 @@ class LineSource
 
     /**
      * Set league
-     *
-     * @param \AppBundle\Entity\League $league
-     *
-     * @return Team
      */
-    public function setLeague(\AppBundle\Entity\League $league = null)
+    public function setLeagues(ArrayCollection $leagues)
     {
-        $this->league = $league;
+        $this->leagues = $leagues;
 
         return $this;
     }
 
     /**
      * Get league
-     *
-     * @return \AppBundle\Entity\League
      */
-    public function getLeague()
+    public function getLeagues()
     {
         return $this->league;
     }

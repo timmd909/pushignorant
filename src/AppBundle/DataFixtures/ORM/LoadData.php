@@ -4,6 +4,7 @@ namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\League;
 use AppBundle\Entity\LineSource;
+use AppBundle\Entity\Line;
 use AppBundle\Entity\Team;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -32,23 +33,58 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
      */
     const TEAM_YAML = '/../app/Resources/fixtures/teams.yml';
 
-    private function loadTeamYaml() {
+    /**
+     * Location of YAML data relative to the kernel root
+     */
+    const LINE_SOURCE_YAML = '/../app/Resources/fixtures/line-sources.yml';
+
+    /**
+     * Loads and parse a YAML file
+     * @param  string $filename Path relative to root_dir
+     * @return YAML data
+     */
+    private function loadAndParseYaml($filename) {
         $rootDir = ($this->container->getParameter('kernel.root_dir'));
-        $filename = $rootDir . self::TEAM_YAML;
+        $filename = $rootDir . $filename;
 
         if (!is_file($filename)) {
-            throw new \Error('Unable to load team YAML data');
+            throw new \Error("Unable to load '$filename' YAML data");
         }
 
         $yamlContent = file_get_contents($filename);
-        $parsed = yaml_parse($yamlContent);
-
-        return $parsed['Leagues'];
+        return yaml_parse($yamlContent);
     }
 
-    public function load(ObjectManager $manager)
-    {
-        $leagueData = $this->loadTeamYaml();
+    private function loadLineSources(ObjectManager $manager) {
+        $parsed = $this->loadAndParseYaml(self::LINE_SOURCE_YAML);
+        $lineSourceData = $parsed['LineSources'];
+
+        foreach ($lineSourceData as $currLineSource) {
+            $lineSourceName = $currLineSource['name'];
+            $lineSourceUrl = $currLineSource['url'];
+            $lineSourceLines = $currLineSource['lines'];
+
+            print("Processing «${lineSourceName}» - ${lineSourceUrl}\n");
+
+            $lineSource = new LineSource();
+            $lineSource->setName($lineSourceName);
+            $lineSource->setUrl($lineSourceUrl);
+
+            foreach ($lineSourceLines as $currLine) {
+                print("\t- ${currLine}\n");
+                $line = new Line();
+                $line->setName($currLine);
+                $line->setLineSource($lineSource);
+                $manager->persist($line);
+            }
+
+            $manager->persist($lineSource);
+        }
+    }
+
+    private function loadTeams(ObjectManager $manager) {
+        $parsed = $this->loadAndParseYaml(self::TEAM_YAML);
+        $leagueData = $parsed['Leagues'];
 
         foreach ($leagueData as $currLeague) {
             $leagueName = $currLeague['name'];
@@ -59,14 +95,6 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
             $league->setName($leagueName);
             $manager->persist($league);
 
-            foreach($currLeague['sources'] as $currLineSource) {
-                $source = new LineSource();
-                $source->setName($currLineSource['name'] . " ($leagueName)");
-                $source->setUrl($currLineSource['url']);
-                $source->setLeague($league);
-                $manager->persist($source);
-            }
-
             foreach($currLeague['teams'] as $currTeam) {
                 $team = new Team();
                 $team->setName($currTeam['name']);
@@ -75,6 +103,16 @@ class LoadData implements FixtureInterface, ContainerAwareInterface
                 $manager->persist($team);
             } // foreach teams
         } // foreach leagues
+    }
+
+    /**
+     * Loads the basic database
+     * @param  ObjectManager $manager
+     */
+    public function load(ObjectManager $manager)
+    {
+        $this->loadTeams($manager);
+        $this->loadLineSources($manager);
 
         $manager->flush();
     } // public function load(...)
