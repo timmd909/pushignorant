@@ -1,0 +1,32 @@
+
+<fieldset class="form-group">
+    <label class="col-xs-3 col-sm-2 control-label">
+        League
+    </label>
+    <div class="col-xs-9 col-sm-3 col-md-2">
+        <select class="form-control">
+            <option>NFL</option>
+            <option>NCAA</option>
+        </select>
+    </div>
+</fieldset>
+<fieldset class="form-group">
+    <label class="col-sm-2 control-label">
+        Source
+    </label>
+    <div class="col-sm-4">
+        <select class="form-control" data-bind="foreach: lineSources">
+            <option data-bind="
+                text: name,
+                attr: { value: id }
+            "></option>
+        </select>
+    </div>
+    <label class="col-sm-2 control-label">
+        Line
+    </label>
+    <div class="col-sm-4">
+        <select class="form-control">
+        </select>
+    </div>
+</fieldset>

@@ -5,5 +5,32 @@
 //
 
 @font-size-base: 12pt;
-@jumbotron-bg: #E6EBED;
-@navbar-default-bg: #E6EBED;
+@jumbotron-bg: @gray-dark;
+
+@navbar-default-bg: @gray;
+@navbar-default-color: @gray-lighter;
+@navbar-default-link-color: @gray-lighter;
+@navbar-default-brand-color: @navbar-default-link-color;
+@navbar-default-link-active-color: @navbar-default-color;
+@navbar-default-link-hover-color: @gray-lighter;
+@navbar-default-link-hover-bg: @gray-darker;
+
+@text-color: lighten(@gray-lighter, 10);
+@body-bg: #000;
+
+@panel-bg: @gray-darker;
+@panel-default-text: @gray-lighter;
+@panel-default-heading-bg: @gray-dark;
+
+@input-bg: @gray-dark;
+@input-color: @text-color;
+@input-color-placeholder: darken(@input-color, 33%);
+@input-border: @gray;
+// @input-bg: @gray-darker;
+// @input-color: @text-color;
+// @input-color-placeholder: darken(@input-color, 33%);
+// @input-border: @gray;
+
+@btn-default-color:              @input-color;
+@btn-default-bg:                 @input-bg;
+@btn-default-border:             @input-border;

@@ -1,5 +1,46 @@
 @TOP-NAV-HEIGHT: 50px;
 
+@import (reference) "bootstrap.less";
+
 body {
   padding-top: @TOP-NAV-HEIGHT;
+}
+
+.pick-form {
+    .picks {
+        .pick-number {
+            padding-top: 0;
+            h2 {
+                padding: 0;
+            }
+        }
+        @media (max-width: @screen-sm-min) {
+            .pick-number {
+                h2 {
+                    margin-top: 0;
+                    .small, small {
+                        color: inherit;;
+                    }
+                }
+            }
+        }
+        @media (min-width: @screen-sm-min) {
+            .pick-number {
+                .text-right();
+            }
+        }
+
+        .pick {
+            padding: 24pt 0;
+            border-bottom: 1px solid @gray-lighter;
+        }
+        .pick:last-of-type {
+            border-bottom: none;
+        }
+
+    }
+
+    .comments {
+        min-height: (@font-size-base * 6);
+    }
 }
