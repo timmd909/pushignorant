@@ -1,0 +1,21 @@
+LineSources:
+    - name: Vegas
+      url: http://www.vegas.com/gaming/sportsline/football/
+      lines:
+          - "Caesars-Hilton"
+          - "MGM-Mirage"
+          - Stations
+      leagues:
+          - NCAA
+          - NFL
+    - name: Yahoo
+      url: http://sports.yahoo.com/nfl/odds
+      lines:
+          - "SportsBetting.ag"
+          - "BOVADA.LV"
+          - "TOPBET.EU"
+          - "MYBookie.ag"
+          - "BETONLINE.ag"
+          - "5dimes.eu"
+      leagues:
+          - NFL

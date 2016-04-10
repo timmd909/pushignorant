@@ -1,10 +1,5 @@
 Leagues:
     - name: NFL
-      sources:
-          - name: Vegas
-            url: http://www.vegas.com/gaming/sportsline/football/
-          - name: Yahoo
-            url: http://sports.yahoo.com/nfl/odds
       teams:
           - region: Arizona
             name: Cardinals
@@ -102,11 +97,6 @@ Leagues:
           - region: Houston
             name: Texans
     - name: NCAA
-      sources:
-          - name: Vegas
-            url: http://www.vegas.com/gaming/sportsline/college-football/
-          - name: Yahoo
-            url: http://rivals.yahoo.com/ncaa/football/odds
       teams:
           - region: Air Force
             name: Falcons
