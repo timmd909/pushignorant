@@ -75,7 +75,7 @@ module.exports = {
 			{
 				expand: true,
 				flatten: true,
-				src: path.join(VOLO_CACHE_DIR, 'font-awesome/css/*.css'),
+				src: path.join(VOLO_CACHE_DIR, 'Font-awesome/css/*.css'),
 				dest: 'web/css'
 			},
 			{
