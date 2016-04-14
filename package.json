@@ -9,6 +9,8 @@
     "less": "^2.5.3"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "fontawesome": "^4.5.0",
     "glob": "^5.0.15",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^1.0.0",
