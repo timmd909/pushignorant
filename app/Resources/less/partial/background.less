@@ -1,0 +1,50 @@
+@BACKGROUND-SIDE-MARGIN: 12px;
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9000;
+    overflow: hidden;
+
+    .background_left,
+    .background_right,
+    .background_center {
+        width: 168px;
+        position: fixed;
+        height: 100%;
+        background-repeat: repeat-y;
+    }
+
+    .background_repeat {
+        position: fixed;
+        background-image: url(../images/football-bg.png);
+        background-repeat: repeat;
+        left: 10%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .background_left {
+        background-image: url('../images/football-bg-left.png');
+        left: @BACKGROUND-SIDE-MARGIN;
+        top: 0;
+    }
+    .background_right {
+        background-image: url('../images/football-bg-right.png');
+        right: @BACKGROUND-SIDE-MARGIN;
+        top: 0;
+    }
+    .background_center {
+        .background_center_inner {
+            background-image: url('../images/football-bg-center.png');
+            position: relative;
+            left: -50%;
+            width: 168px;
+            height: 100%;
+        }
+        left: 50%;
+    }
+}

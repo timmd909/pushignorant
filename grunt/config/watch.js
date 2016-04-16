@@ -3,7 +3,7 @@
 
 module.exports = {
   less: {
-    files: ['app/Resources/less/*.less'],
+    files: ['app/Resources/less/**/*.less'],
     tasks: ['less:dev']
   }
 };
