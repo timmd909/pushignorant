@@ -1,14 +1,22 @@
 homepage:
     path: /
-    defaults: { _controller: AppBundle:Default:index }
+    defaults: { _controller: AppBundle:Default:home }
 
 json:
     path: /json/{name}
     defaults: { _controller: AppBundle:JSON:show }
 
-contact-us:
-    path: /contact-us/{slug}
-    defaults: { _controller: AppBundle:ContactUs:show, slug: 'index' }
+contact:
+    path: /contact/{slug}
+    defaults: { _controller: AppBundle:Contact:show, slug: 'index' }
+
+submit-picks:
+    path: /submit-picks
+    defaults: { _controller: AppBundle:SubmitPicks:show, slug: 'index' }
+
+standings:
+    path: /standings
+    defaults: { _controller: AppBundle:Standings:show, slug: 'index' }
 
 # Everything else
 page:

@@ -8,20 +8,23 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-  public function indexAction(Request $request)
-  {
-    return $this->pageAction($request, 'index');
-  }
+    public function homeAction(Request $request)
+    {
+        return $this->render('default/index.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'page' => 'homepage'
+        ]);
+    }
 
-  /**
-   * Generic page request handler
-   */
-  public function pageAction(Request $request, $slug)
-  {
-    return $this->render('default/' . $slug . '.html.twig', [
-      'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
-      'page' => $slug
-    ]);
-  }
+    /**
+    * Generic page request handler
+    */
+    public function pageAction(Request $request, $slug)
+    {
+        return $this->render('default/' . $slug . '.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'page' => 'homepage'
+        ]);
+    }
 
 }
