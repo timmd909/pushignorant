@@ -18,7 +18,7 @@
 
 # My Ignores
 /node_modules/
-/web/css/
+/web/styles/
 /web/fonts/
-/web/js/lib/
+/web/scripts/lib/
 .brackets.json

@@ -10,7 +10,7 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: path.join(VOLO_CACHE_DIR, '/bootstrap/dist/js/bootstrap**.js'),
-				dest: 'web/js/lib'
+				dest: 'web/scripts/lib'
 			},
 			{
 				expand: true,
@@ -27,7 +27,7 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: path.join(VOLO_CACHE_DIR, 'jquery.**'),
-				dest: 'web/js/lib'
+				dest: 'web/scripts/lib'
 			}
 		]
 	}, // jquery
@@ -38,7 +38,7 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: path.join(VOLO_CACHE_DIR, 'lodash/dist/lodash*.js'),
-				dest: 'web/js/lib'
+				dest: 'web/scripts/lib'
 			}
 		]
 	}, // lodash
@@ -49,7 +49,7 @@ module.exports = {
 			   expand: true,
 			   flatten: true,
 			   src: path.join(VOLO_CACHE_DIR, 'require.js'),
-			   dest: 'web/js/lib'
+			   dest: 'web/scripts/lib'
 		   }
 	   ]
    }, // requirejs
@@ -60,7 +60,7 @@ module.exports = {
 				expand: true,
 				flatten: true,
 				src: path.join(VOLO_CACHE_DIR, 'knockout/dist/*.js'),
-				dest: 'web/js/lib/',
+				dest: 'web/scripts/lib/',
 				rename: function (dest, src) {
 					src = src.replace(/\.js$/, '.min.js').replace('debug.min.', '');
 
@@ -77,7 +77,7 @@ module.exports = {
 				flatten: true,
 				cwd: path.join(VOLO_CACHE_DIR, 'Font-Awesome/css/'),
 				src: '*.css',
-				dest: 'web/css'
+				dest: 'web/styles'
 			},
 			{
 				expand: true,

@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-    'web-js': ["web/js/lib/**"],
-    'web-css': ["web/css/**"]
+    'web-scripts': ["web/scripts/lib/**"],
+    'web-styles': ["web/styles/**"]
 };

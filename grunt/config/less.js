@@ -1,8 +1,8 @@
 'use strict';
 
 var FILES = {
-	'web/css/bootstrap.css': 'app/Resources/less/bootstrap.less',
-	'web/css/pushignorant.css': 'app/Resources/less/pushignorant.less',
+	'web/styles/bootstrap.css': 'app/Resources/less/bootstrap.less',
+	'web/styles/pushignorant.css': 'app/Resources/less/pushignorant.less',
 };
 
 module.exports = {

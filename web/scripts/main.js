@@ -1,5 +1,5 @@
 require({
-    baseUrl: 'js/',
+    baseUrl: 'scripts/',
     paths: {
         'jquery': 'lib/jquery',
         'bootstrap': 'lib/bootstrap',

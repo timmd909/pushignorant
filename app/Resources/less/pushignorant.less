@@ -6,6 +6,35 @@ body {
   padding-top: @TOP-NAV-HEIGHT;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9000;
+    overflow: hidden;
+
+    .background_left,
+    .background_right {
+        background-image: url(../images/football-bg.png);
+        background-repeat: repeat-y;
+        width: 480px;
+        height: 100%;
+        position: absolute;;
+    }
+    .background_left {
+        background-position: left;
+        left: 0;
+        top: 0;
+    }
+    .background_right {
+        background-position: right;
+        right: 0;
+        top: 0;
+    }
+}
+
 .pick-form {
     .picks {
         .pick-number {

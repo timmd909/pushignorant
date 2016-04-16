@@ -4,24 +4,31 @@
   <meta charset="UTF-8" />
   <title>{% block title %}Push Master Web UI{% endblock %}</title>
   {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/pushignorant.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/pushignorant.css') }}">
   {% endblock %}
   <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
-  {% block navbar %}
-    {% include 'partial/navbar.html.twig' %}
-  {% endblock %}
-
-  {% block body %}{% endblock %}
-
-  {% block javascripts %}
-    <script src="{{ asset('js/lib/require.js') }}"></script>
-    {% block javascripts_main %}
-        <script src="{{ asset('js/main.js') }}"></script>
+    {% block background %}
+        <div class="background">
+            <div class="background_right"></div>
+            <div class="background_left"></div>
+        </div>
     {% endblock %}
-  {% endblock %}
+
+    {% block navbar %}
+        {% include 'partial/navbar.html.twig' %}
+    {% endblock %}
+
+    {% block body %}{% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset('scripts/lib/require.js') }}"></script>
+        {% block javascripts_main %}
+            <script src="{{ asset('scripts/main.js') }}"></script>
+        {% endblock %}
+    {% endblock %}
 </body>
 </html>

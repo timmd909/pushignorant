@@ -30,9 +30,9 @@ DirectoryIndex app.php
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
 
-    # Pass through web/js/ to work around RequireJS getting
+    # Pass through web/scripts/ to work around RequireJS getting
     # confused w/ the baseUrl during debug
-    RewriteCond %{REQUEST_URI} app_dev.php\/js\/
+    RewriteCond %{REQUEST_URI} app_dev.php\/scripts\/
     RewriteRule ^app_dev.php(.*)$ %{ENV:BASE}/$1 [R=301,L]
 
     # Sets the HTTP_AUTHORIZATION header removed by Apache
