@@ -41,3 +41,26 @@
 
 @well-bg: @gray-dark;
 @well-border: #000;
+
+//@modal-content-bg: @gray-darker;
+@modal-content-bg: #000;
+@modal-content-border-color: @input-border;
+@modal-header-border-color: @modal-content-border-color;
+@modal-backdrop-bg: @gray;
+@modal-backdrop-opacity: 0.8;
+
+@close-color: #fff;
+.close{
+    .opacity(0.5);
+    &:hover,
+    &:focus {
+        color: @close-color;
+        text-decoration: none;
+        cursor: pointer;
+        .opacity(.75);
+    }
+}
+
+
+@code-color: @gray-lighter;
+@code-bg: @gray-dark;

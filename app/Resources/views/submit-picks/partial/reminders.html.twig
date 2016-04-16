@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Reminders</h2>
+    </div>
+    <div class="panel-body clearfix">
+        <button type="button" class="btn btn-default pull-right"
+            data-toggle="modal" data-target="#the-rules">
+            Show All Rules
+        </button>
+        <ul>
+            <li>All picks must be submitted at the same time</li>
+            <li>Picks must be made before the games start</li>
+        </ul>
+        <div class="modal fade" tabindex="-1" role="dialog" id="the-rules">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>
+                            PushMaster Rules
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        {% include 'partial/rules.html.twig' %}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- / .modal-content -->
+            </div><!-- / .modal-dialog -->
+        </div>
+    </div><!-- / .panel-body -->
+</div><!-- / .panel -->
